@@ -1,0 +1,20 @@
+# Secrets — never commit
+client_secret*.json
+client_secret.json
+youtube.token.json
+*.token.json
+token.json
+.env
+.env.*
+.venv/
+node_modules/
+
+# Runtime artefacts
+work/
+*.mp4
+*.webm
+*.srt
+*.vtt
+auth.log
+oauth*.log
+full_test.log

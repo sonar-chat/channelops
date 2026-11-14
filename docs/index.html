@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChannelOps CLI — personal YouTube channel automation</title>
+<style>
+:root{--bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--acc:#ff4d2e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:64px 24px}
+h1{font-size:2rem;margin:0 0 .25rem}h1 span{color:var(--acc)}
+h2{font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin:2.4rem 0 .6rem;font-weight:600}
+p,li{color:#c9d1d9}
+code{background:#161b22;border:1px solid #30363d;border-radius:6px;padding:.1em .4em;font-size:.9em}
+a{color:var(--acc)}
+footer{margin-top:3rem;padding-top:1.3rem;border-top:1px solid #21262d;color:var(--dim);font-size:.9rem}
+.grid{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:1rem}
+.card{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:.9rem 1rem}
+.card b{display:block;color:var(--fg);margin-bottom:.15rem}
+</style></head>
+<body><main>
+<h1>Channel<span>Ops</span> CLI</h1>
+<p>A personal, single-user command-line tool that automates routine work on a YouTube channel
+the operator owns: uploading and scheduling videos, editing titles/descriptions/tags,
+setting thumbnails, managing playlists and captions, moderating comments, and reading the
+channel's own private analytics.</p>
+
+<h2>What it is</h2>
+<p>ChannelOps CLI is a local program (the open-source <a href="https://github.com/eat-pray-ai/yutu">yutu</a>
+binary) run by one person on their own computer. It talks to the YouTube Data API v3 and the
+YouTube Analytics API v2 on behalf of exactly one Google account — the channel owner's.
+There is no web service, no sign-up, and no other users.</p>
+
+<div class="grid">
+  <div class="card"><b>Single user</b>One operator, one channel, own credentials.</div>
+  <div class="card"><b>Local only</b>Runs on the operator's machine; no hosted backend.</div>
+  <div class="card"><b>No data sale</b>No analytics of visitors, no advertising, no resale.</div>
+</div>
+
+<h2>Scopes it asks for</h2>
+<ul>
+  <li><code>youtube</code> — upload and manage the channel's own videos, playlists, captions and comments.</li>
+  <li><code>yt-analytics.readonly</code> — read the channel's own views, watch time and retention.</li>
+  <li><code>yt-analytics-monetary.readonly</code> — read the channel's own revenue figures.</li>
+</ul>
+
+<h2>Documents</h2>
+<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p>
+
+<footer>Operated by the channel owner for personal use. Contact:
+<a href="mailto:atsitesolutionspakistan@gmail.com">atsitesolutionspakistan@gmail.com</a>.
+Not affiliated with, endorsed by, or sponsored by Google LLC or YouTube.</footer>
+</main></body></html>
