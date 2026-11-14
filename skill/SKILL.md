@@ -236,6 +236,15 @@ Checks that still matter for a new channel: `video insert --help` still shows
 `--publishAt`/`--yes`; analytics numbers are cross-checked against Studio for one day before
 being reported.
 
+## Repo
+
+The working copy lives at `C:/Users/rest/youtube-channel-ops` and pushes to
+`git@github.com:sonar-chat/channelops.git` (branch `main`, SSH key
+`C:/Users/rest/.ssh/github_ops`). Publish flow: rebase onto `origin/main` first (the remote also
+carries the site's policy pages), then push. Never commit `client_secret.json` or
+`youtube.token.json` — `.gitignore` covers both; `git grep --cached -E "GOCSPX-|ya29\."` before
+every push.
+
 ## Support files
 
 - `references/yutu-setup-this-host.md` — installed paths, ABI of the wrapper, the one-time GCP
